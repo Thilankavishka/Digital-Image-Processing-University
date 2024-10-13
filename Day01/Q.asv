@@ -1,0 +1,30 @@
+A = imread('cameraman.tif');
+
+subplot(2,2,1);
+imshow(A);
+
+subplot(2,2,2);
+imagesc(A);
+axis image
+axis off;
+colormap(gray)
+
+subplot(2,2,3);
+imagesc(A);
+axis image
+axis off;
+colormap(subplot(2,2,2),jet);
+
+B = rand(256).*1000;
+
+imshow(B);
+
+imagesc(A);
+
+axis image;
+axis off;
+
+colormap(subplot(2,2,3)gray);
+colorbar;
+
+imshow(B,[200 800])

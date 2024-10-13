@@ -1,0 +1,9 @@
+B = imread('cell.tif');
+
+c = imread('spine.tif');
+D = imread('onion.png');
+
+subplot(3,1,1);
+imagesc(B);
+axis image;
+
